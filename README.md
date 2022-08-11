@@ -8,7 +8,18 @@ Dailies page
 Todo Page
 ![Todo page](/SS/todo-blank.png)
 
+Add task to Dailies:
+Dailies page
+![New dailies task](/SS/dailies-update.png)
+Home Page
+![home page](/SS/homepage-after.png)
 
+Edit Dailies task:
+Edit
+![Dailies page on edit](/SS/dailies-edit-before.png)
+After
+![Dailies page after edit](/SS/dailies-updated-after.png)
+![Home page after edit](/SS/homepage-update.png)
 
 Todo page:
 Add a todo task
