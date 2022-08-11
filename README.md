@@ -10,7 +10,7 @@ Todo Page
 
 Add task to Dailies:  
 Dailies page
-![New dailies task](/SS/dailies-update.png)
+![New dailies task](/SS/dailies-updated.png)
 Home Page
 ![home page](/SS/homepage-after.png)
 
