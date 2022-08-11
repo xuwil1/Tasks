@@ -1,0 +1,12 @@
+<h2 class="page-header"><%= todo.task %></h2>
+<div>Created: <%= todo.createdAt.toISOString().split('T')[0] %></div>
+<div>Last updated: <%= todo.updatedOn.toISOString().split('T')[0] %></div>
+<h5>Description:</h5>
+<p><%= todo.description %></p>
+<div class="form-row-end btn-row">
+    <a class="btn btn-primary" href="/todo/<%= todo.id %>/edit"> Edit</a>
+    <form action="/todo/<%= todo.id %>?_method=DELETE" method="POST">
+        <button class="btn btn-danger" type="submit"> Delete</button>
+    </form>
+</div>
+

@@ -1,0 +1,36 @@
+<ul>
+    
+    <% tasks.forEach(task=> { %>
+        <div class="display">
+            <% if(url==="/todo/"){%> 
+                <li><a id="todo" href="<%= url %><%=task.id %>"><%= task.task %></a></li>
+            <% } else { %>
+                <% if(url==="/" && task.checked){ %>
+                    <li class="complete"><%= task.task %></li>
+                <% }else { %>
+                    <li><%= task.task %></li> 
+                <% }  %>
+ 
+            <% } %>
+        </div>
+        <div class="form-row-end btn-row">
+            <% if(url==="/") { %>
+                <form action="<%= url %><%=task.id %>/mark?_method=PUT" method="POST">
+                    <button class="btn btn-danger" type="submit">
+                <% if(url==="/" && task.checked){ %>
+                         Unheck
+                <% }else { %>
+                        Check
+                <% }  %>
+            </button>
+                </form>
+            <% } else {%> 
+                    <a class="btn btn-primary" href="<%= url %><%=task.id %>/edit"> Edit</a>
+                    <form action="<%= url %><%=task.id %>?_method=DELETE" method="POST">
+                        <button class="btn btn-danger" type="submit"> Delete</button>
+                    </form>
+            <% } %>
+        </div>
+    <% }) %>
+<ul>
+

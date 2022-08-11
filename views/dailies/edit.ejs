@@ -1,0 +1,10 @@
+<form action="/dailies/<%= dailyTask.id%>?_method=PUT" method="POST">
+    <div class="form-item">
+        <label>Task </label>
+        <input type="text" name="task" value="<%= dailyTask.task %>">
+    </div>
+    <div class="btn-row">
+        <a class="btn btn-danger" href="/dailies">Cancel</a>
+        <button class="btn btn-primary" type="submit">Update</button>
+    </div>
+</form>

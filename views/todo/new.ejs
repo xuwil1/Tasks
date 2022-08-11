@@ -1,0 +1,12 @@
+<form action="/todo" method="POST">
+    <div class="form-item">
+        <label>Task </label>
+        <input type="text" name="task" value="<%= todo.task %>" required>
+        <label>Description </label>
+        <input type="text" name="description" value="<% todo.description %>">
+    </div>
+    <div class="form-row-end btn-row">
+        <a class="btn btn-danger" href="/todo">Cancel</a>
+        <button class="btn btn-primary" type="submit">Add</button>
+    </div>
+</form>

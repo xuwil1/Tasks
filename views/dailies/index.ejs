@@ -1,0 +1,25 @@
+<h2 class="page-header">Dailies</h2>
+
+<form action="/dailies" method="POST">
+    <div class="form-item">
+        <label>Task </label>
+        <input id="dailies" type="text" name="task" placeholder="New task to appear on homepage"required>
+    </div>
+    <div class="form-row-end btn-row">
+        <button class="btn btn-primary" type="submit">Add</button>
+    </div>
+</form>
+
+<div>
+    <%- include('../partials/tasks', {tasks: dailyTasks, url: `/dailies/` }) %>
+<div>
+
+<% if(dailyTasks.length > 0 ){ %>
+    <br>
+    <div class="form-row-end btn-row">
+        <form action="/dailies?_method=DELETE" method="POST">
+            <button class="btn btn-danger"type="submit">Clear All</button>
+        </form>
+    </div>
+<% } %>
+
