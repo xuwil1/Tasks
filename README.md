@@ -4,19 +4,19 @@ Pages with no tasks:
 Home page
 ![Homepage page](/SS/homepage-blank.png)
 Dailies page
-![Dailies page](dailies-blank.png)
+![Dailies page](/SS/dailies-blank.png)
 Todo Page
-![Todo page](todo-blank.png)
+![Todo page](/SS/todo-blank.png)
 
 
 
 Todo page:
 Add a todo task
-![New todo task](todo-add.png)
+![New todo task](/SS/todo-add.png)
 Todo tasks added
-![Todo tasks added](todo-added.png)
+![Todo tasks added](/SS/todo-added.png)
 Edit todo task
-![New todo task](todo-edit-before.png)
+![New todo task](/SS/todo-edit-before.png)
 Todo task added
-![New todo task](todo-edit-after.png)
+![New todo task](/SS/todo-edit-after.png)
 
